@@ -14,6 +14,61 @@
 </head>
 
 <body style="height:1500px">
+    <style>
+        * {
+          box-sizing: border-box;
+        }
+        
+        body {
+          margin: 0;
+          font-family: Arial;
+        }
+        
+        .header {
+          text-align: center;
+          padding: 32px;
+        }
+        
+        .row {
+          display: -ms-flexbox; /* IE10 */
+          display: flex;
+          -ms-flex-wrap: wrap; /* IE10 */
+          flex-wrap: wrap;
+          padding: 0 4px;
+        }
+        
+        /* Create four equal columns that sits next to each other */
+        .column {
+          -ms-flex: 25%; /* IE10 */
+          flex: 25%;
+          max-width: 25%;
+          padding: 0 4px;
+        }
+        
+        .column img {
+          margin-top: 8px;
+          vertical-align: middle;
+          width: 100%;
+        }
+        
+        /* Responsive layout - makes a two column-layout instead of four columns */
+        @media screen and (max-width: 800px) {
+          .column {
+            -ms-flex: 50%;
+            flex: 50%;
+            max-width: 50%;
+          }
+        }
+        
+        /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+        @media screen and (max-width: 600px) {
+          .column {
+            -ms-flex: 100%;
+            flex: 100%;
+            max-width: 100%;
+          }
+        }
+        </style>
 
     <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
 
@@ -64,77 +119,50 @@
         </div>
     </nav><br> <br>
 
-    <div class="container my-4">
-
-
-        <h2>Gallery</h2><br>
-
-        <img class="bd-placeholder-img" width="200" height="250" src="bitcoin.jfif">
-        <img class="bd-placeholder-img" width="200" height="250" src="bitcoin.jfif">
-        <img class="bd-placeholder-img" width="200" height="250" src="coding1.jfif">
-        <img class="bd-placeholder-img" width="200" height="250" src="bitcoin.jfif">
-        <img class="bd-placeholder-img" width="200" height="250" src="bitcoin.jfif"><br><br>
-        <img class="bd-placeholder-img" width="200" height="250" src="bitcoin.jfif">
-        <img class="bd-placeholder-img" width="200" height="250" src="bitcoin.jfif">
-        <img class="bd-placeholder-img" width="200" height="250" src="bitcoin.jfif">
-        <img class="bd-placeholder-img" width="200" height="250" src="bitcoin.jfif">
-        <img class="bd-placeholder-img" width="200" height="250" src="bitcoin.jfif"><br><br>
-        <img class="bd-placeholder-img" width="200" height="250" src="bitcoin.jfif">
-        <img class="bd-placeholder-img" width="200" height="250" src="bitcoin.jfif">
-        <img class="bd-placeholder-img" width="200" height="250" src="bitcoin.jfif">
-        <img class="bd-placeholder-img" width="200" height="250" src="bitcoin.jfif">
-        <img class="bd-placeholder-img" width="200" height="250" src="bitcoin.jfif"><br><br>
-        <img class="bd-placeholder-img" width="200" height="250" src="bitcoin.jfif">
-        <img class="bd-placeholder-img" width="200" height="250" src="bitcoin.jfif">
-        <img class="bd-placeholder-img" width="200" height="250" src="bitcoin.jfif">
-        <img class="bd-placeholder-img" width="200" height="250" src="bitcoin.jfif">
-        <img class="bd-placeholder-img" width="200" height="250" src="bitcoin.jfif"><br><br>
-        <img class="bd-placeholder-img" width="200" height="250" src="bitcoin.jfif">
-        <img class="bd-placeholder-img" width="200" height="250" src="bitcoin.jfif">
-        <img class="bd-placeholder-img" width="200" height="250" src="bitcoin.jfif">
-        <img class="bd-placeholder-img" width="200" height="250" src="bitcoin.jfif">
-        <img class="bd-placeholder-img" width="200" height="250" src="bitcoin.jfif"><br><br>
-        <img class="bd-placeholder-img" width="200" height="250" src="bitcoin.jfif">
-        <img class="bd-placeholder-img" width="200" height="250" src="bitcoin.jfif">
-        <img class="bd-placeholder-img" width="200" height="250" src="bitcoin.jfif">
-        <img class="bd-placeholder-img" width="200" height="250" src="bitcoin.jfif">
-        <img class="bd-placeholder-img" width="200" height="250" src="bitcoin.jfif"><br><br>
-        <img class="bd-placeholder-img" width="200" height="250" src="bitcoin.jfif">
-        <img class="bd-placeholder-img" width="200" height="250" src="bitcoin.jfif">
-        <img class="bd-placeholder-img" width="200" height="250" src="bitcoin.jfif">
-        <img class="bd-placeholder-img" width="200" height="250" src="bitcoin.jfif">
-        <img class="bd-placeholder-img" width="200" height="250" src="bitcoin.jfif"><br><br>
-        <img class="bd-placeholder-img" width="200" height="250" src="bitcoin.jfif">
-        <img class="bd-placeholder-img" width="200" height="250" src="bitcoin.jfif">
-        <img class="bd-placeholder-img" width="200" height="250" src="bitcoin.jfif">
-        <img class="bd-placeholder-img" width="200" height="250" src="bitcoin.jfif">
-        <img class="bd-placeholder-img" width="200" height="250" src="bitcoin.jfif"><br><br>
-        <img class="bd-placeholder-img" width="200" height="250" src="bitcoin.jfif">
-        <img class="bd-placeholder-img" width="200" height="250" src="bitcoin.jfif">
-        <img class="bd-placeholder-img" width="200" height="250" src="bitcoin.jfif">
-        <img class="bd-placeholder-img" width="200" height="250" src="bitcoin.jfif">
-        <img class="bd-placeholder-img" width="200" height="250" src="bitcoin.jfif"><br><br>
-        <img class="bd-placeholder-img" width="200" height="250" src="bitcoin.jfif">
-        <img class="bd-placeholder-img" width="200" height="250" src="bitcoin.jfif">
-        <img class="bd-placeholder-img" width="200" height="250" src="bitcoin.jfif">
-        <img class="bd-placeholder-img" width="200" height="250" src="bitcoin.jfif">
-        <img class="bd-placeholder-img" width="200" height="250" src="bitcoin.jfif"><br><br>
-        <img class="bd-placeholder-img" width="200" height="250" src="bitcoin.jfif">
-        <img class="bd-placeholder-img" width="200" height="250" src="bitcoin.jfif">
-        <img class="bd-placeholder-img" width="200" height="250" src="bitcoin.jfif">
-        <img class="bd-placeholder-img" width="200" height="250" src="bitcoin.jfif">
-        <img class="bd-placeholder-img" width="200" height="250" src="bitcoin.jfif"><br><br>
-        <img class="bd-placeholder-img" width="200" height="250" src="bitcoin.jfif">
-        <img class="bd-placeholder-img" width="200" height="250" src="bitcoin.jfif">
-        <img class="bd-placeholder-img" width="200" height="250" src="bitcoin.jfif">
-        <img class="bd-placeholder-img" width="200" height="250" src="bitcoin.jfif">
-        <img class="bd-placeholder-img" width="200" height="250" src="bitcoin.jfif">
-
-
-
-
-        
-    </div>
+    <div class="header">
+        <h3>GALLERY</h3>
+        <p>Check the Images related to IOT and CryptoCurrency</p>
+      </div>
+      
+      <!-- Photo Grid -->
+      <div class="row"> 
+        <div class="column">
+          <img src="editor.jpeg" style="width:100%">
+          <img src="editor.jpeg" style="width:100%">
+          <img src="editor.jpeg" style="width:100%">
+          <img src="editor.jpeg" style="width:100%">
+          <img src="editor.jpeg" style="width:100%">
+          <img src="editor.jpeg" style="width:100%">
+          <img src="editor.jpeg" style="width:100%">
+        </div>
+        <div class="column">
+          <img src="editor.jpeg" style="width:100%">
+          <img src="editor.jpeg" style="width:100%">
+          <img src="editor.jpeg" style="width:100%">
+          <img src="editor.jpeg" style="width:100%">
+          <img src="editor.jpeg" style="width:100%">
+          <img src="editor.jpeg" style="width:100%">
+          <img src="editor.jpeg" style="width:100%">
+        </div>  
+        <div class="column">
+          <img src="editor.jpeg" style="width:100%">
+          <img src="editor.jpeg" style="width:100%">
+          <img src="editor.jpeg" style="width:100%">
+          <img src="editor.jpeg" style="width:100%">
+          <img src="editor.jpeg" style="width:100%">
+          <img src="editor.jpeg" style="width:100%">
+          <img src="editor.jpeg" style="width:100%">
+        </div>
+        <div class="column">
+          <img src="editor.jpeg" style="width:100%">
+          <img src="editor.jpeg" style="width:100%">
+          <img src="editor.jpeg" style="width:100%">
+          <img src="editor.jpeg" style="width:100%">
+          <img src="editor.jpeg" style="width:100%">
+          <img src="editor.jpeg" style="width:100%">
+          <img src="editor.jpeg" style="width:100%">
+        </div>
+      </div>
     <footer class="container">
         <p class="float-right"><a href="#">Back to top</a></p>
         <p>© 2020-2021 #HAS, Inc. · <a href="/privacy.html">Terms and Privacy</a> · </p>
